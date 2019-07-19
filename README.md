@@ -23,3 +23,10 @@ setup ngrok ssh from anywhere and get the port emailed to you
 ---
 
 4. Reboot and you're good
+
+## TIPS
+1. Untrack/track changes to config.py:
+
+`git update-index --assume-unchanged config.py`
+
+`git update-index --no-assume-unchanged config.py`
