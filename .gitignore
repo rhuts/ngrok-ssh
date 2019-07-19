@@ -1,0 +1,5 @@
+# config  --- !!! INCLUDES CREDENTIALS !!! ---
+config.py
+
+# python compiled scripts
+*.pyc
