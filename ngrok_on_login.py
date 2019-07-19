@@ -40,12 +40,6 @@ def init_ngrok():
 
     time.sleep(2)
 
-    if proc.returncode != 0:
-        return RH_STATUS.FAIL, 'Failed to start ngrok'
-
-    out, err = proc.communicate()
-    print(out)
-
     localhost_url = "http://localhost:4040/api/tunnels" # url with tunnel details
     tunnel_url = requests.get(localhost_url).text # get the tunnel information
     j = json.loads(tunnel_url)

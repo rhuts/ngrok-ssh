@@ -3,3 +3,6 @@ config.py
 
 # python compiled scripts
 *.pyc
+
+# logs
+log/*
