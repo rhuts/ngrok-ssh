@@ -38,10 +38,10 @@ def init_ngrok():
     # start ngrok tunnel and save url
     proc = subprocess.Popen([cwd + "/lib/ngrok", "tcp", '22'], stdout = subprocess.PIPE)
 
+    time.sleep(2)
+
     if proc.returncode != 0:
         return RH_STATUS.FAIL, 'Failed to start ngrok'
-
-    time.sleep(2)
 
     out, err = proc.communicate()
     print(out)
